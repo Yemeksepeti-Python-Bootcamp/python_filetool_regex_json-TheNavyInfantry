@@ -1,6 +1,21 @@
 [
   {
     "id": "61e3d0ddcb2c171c03d8aeb2",
+    "email": "robot@undefined.jp",
+    "username": "unique12",
+    "profile": {
+      "name": "Robotumsu Text",
+      "dob": "2364-19-35",
+      "address": "50 Galaxy Street, Waterview, Andromega",
+      "location": {
+        "lat": 52.175239,
+        "long": 14.798533
+      }
+    },
+    "apiKey": "6b755db7-34ed-4bd1-a0cd-e35669fc700c"
+  },
+  {
+    "id": "61e3d0ddcb2c171c03d8aeb2",
     "email": "herminia_compton@undefined.jp",
     "username": "herminia92",
     "profile": {
@@ -8,7 +23,22 @@
       "dob": "1992-11-28",
       "address": "50 Sands Street, Waterview, Palau",
       "location": {
-        "lat": -52.175239,
+        "lat": 52.175239,
+        "long": 14.798533
+      }
+    },
+    "apiKey": "6b755db7-34ed-4bd1-a0cd-e35669fc700c"
+  },
+  {
+    "id": "61e3d0ddcb2c171c03d8aeb2",
+    "email": "nedim@undefined.jp",
+    "username": "developer1903",
+    "profile": {
+      "name": "Nedim Can",
+      "dob": "1990-12-23",
+      "address": "55 Sands Street, Waterview, Las Vegas",
+      "location": {
+        "lat": 52.175239,
         "long": 14.798533
       }
     },
