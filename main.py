@@ -18,12 +18,18 @@ def main():
     file = args.file #Set file as argument
     db = args.db #Set db as argument
 
-    file_process = Json_tool(file) #Calls -> "dataregex.json"
-    db_process = Db_tool(db) #Calls -> "dataregex.db"
-    db_process.create_table() #Create table
-    access_user_data = file_process.create_user_from_data() #Access created users
+    try:
+        file_process = Json_tool(file) #Calls -> "dataregex.json"
+        db_process = Db_tool(db) #Calls -> "dataregex.db"
+        db_process.create_table() #Create table
+        access_user_data = file_process.create_user_from_data() #Access created users
 
-    for each_user in access_user_data: #Iterate over accessed user data
-        db_process.insert_data(each_user) #Insert those to the database
+        for each_user in access_user_data: #Iterate over accessed user data
+            db_process.insert_data(each_user) #Insert those to the database
+
+        print(f"NOTIFICATION: Both '{db}' created and '{file}' processed")
+
+    except:
+        print(f"NOTIFICATION: Neither '{db}' was created nor '{file}' was processed")
 
 main()
