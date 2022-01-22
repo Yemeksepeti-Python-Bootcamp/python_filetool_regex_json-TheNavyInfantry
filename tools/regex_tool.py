@@ -18,10 +18,7 @@ class Regex_tool():
         match_email = re.search(pattern_email, email)
         email_group = match_email.group(1)
 
-        if username_group in email_group:
-            return 1
-        else:
-            return 0
+        return 1 if username_group in email_group else 0
 
     def username_validate(self, username, name_surname):
         pattern = r"^\b(\w+)\b(.*)\b(\w+)\b"
